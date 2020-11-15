@@ -8,6 +8,6 @@ import com.example.myapplication.repositories.MainRepository
 import dagger.hilt.android.qualifiers.ApplicationContext
 
 class MainViewModel @ViewModelInject constructor(
-        @ApplicationContext app: Application,
+        app: Application,
         mainRepository: MainRepository): AndroidViewModel(app) {
 }

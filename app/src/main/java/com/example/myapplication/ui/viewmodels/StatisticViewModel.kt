@@ -7,7 +7,7 @@ import com.example.myapplication.repositories.MainRepository
 import dagger.hilt.android.qualifiers.ApplicationContext
 
 class StatisticViewModel @ViewModelInject constructor(
-        @ApplicationContext app: Application,
+        app: Application,
         mainRepository: MainRepository): AndroidViewModel(app)
 {
 }

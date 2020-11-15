@@ -4,7 +4,7 @@ import com.example.myapplication.db.Run
 import com.example.myapplication.db.RunDao
 import javax.inject.Inject
 
-class MainRepository @Inject constructor(val runDao: RunDao) {
+class MainRepository @Inject constructor(private val runDao: RunDao) {
     suspend fun insertRun(run: Run) = runDao.insertRun(run)
 
     suspend fun deleteRun(run: Run) = runDao.deleteRun(run)

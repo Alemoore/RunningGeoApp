@@ -24,7 +24,7 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideDatabase(@ApplicationContext app: Context): RunningDatabase = Room.databaseBuilder(
+    fun provideDatabase(app: Application): RunningDatabase = Room.databaseBuilder(
             app,
             RunningDatabase::class.java,
             RUNNING_DATABASE_NAME)
